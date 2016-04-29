@@ -1,0 +1,18 @@
+#bet-dice {
+  display: none;
+  width: 35%;
+  margin-left: 33%;
+  margin-top: 10%;
+}
+
+#top-row {
+  margin-left: 7%;
+}
+
+#dice3 {
+  margin-left: -13%;
+}
+
+#bottom-row {
+  margin-top: 5%;
+}

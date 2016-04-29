@@ -1,0 +1,124 @@
+/*FOR ENTERING OWNERNAME AREA*/
+
+#ownername-container {
+  /*display: none;*/
+  background: rgba(26, 60, 72, 0.7);
+  border-radius: 1.5%;
+}
+
+.container .jumbotron {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  padding: 22rem 15rem;
+
+}
+
+.enter-ownername {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.landing-title {
+  color: #E19D29;
+}
+
+.pull-left {
+  transform: scale(-1, 1);
+  padding: 0;
+}
+
+.pull-right {
+  padding: 0;
+}
+
+.line {
+  border: 0.3rem solid #E19D29;
+  width: 100%;
+}
+
+
+.landing-text {
+ color: #F5DA81;
+ margin-top: 0.8rem;
+}
+
+
+#ownername {
+  opacity: 0.7;
+}
+
+#roomname {
+  opacity: 0.7;
+}
+/*----------------------*/
+
+/*BUTTON LANDING*/
+
+[class^="btn-"] {
+  position: relative;
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  height: 80px;
+  max-width: 250px;
+  text-transform: uppercase;
+  overflow: hidden;
+  border-radius: 5%;
+  border: 3px solid currentColor;
+}
+
+.button-container *,
+.button-container *:before,
+.button-container *:after {
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.7);
+}
+.button-container i, .button-container em,
+.button-container b, .button-container strong,
+.button-container span {
+  -webkit-transition: none;
+  transition: none;
+}
+
+*:before,
+*:after {
+  z-index: 10;
+}
+
+.btn-8 {
+  color: #E19D29;
+  /*background-color: white;*/
+}
+.btn-8:before, .btn-8:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 0;
+  background: #E19D29;
+}
+
+.btn-8:after {
+  top: auto;
+  bottom: 0;
+}
+.btn-8:hover {
+  color: white;
+  opacity: 0.7;
+}
+.btn-8:hover:before, .btn-8:hover:after {
+  height: 40px;
+}
+.btn-8:active {
+  background: #014862;
+}
+
+/*---------------------------*/

@@ -1,0 +1,108 @@
+#display-bar-container {
+  display: none;
+  background-color: rgba(26, 60, 72, 0.7);
+  width: 90%;
+  height: 10vh;
+  border: 0.3em solid #F5DA81;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+}
+
+#owner-hide-all-bets {
+  display: none;
+}
+#display-bar {
+
+}
+
+#display-text {
+  font-size: 2em;
+  color: #F5DA81;
+  text-align: center;
+  margin-top: 3%;
+}
+}
+
+#hide-all-bets {
+  display: none;
+}
+
+#all-bets {
+  /*display: none;*/
+  display: flex;
+  flex-wrap: wrap;
+      width: 110%;
+    margin-left: -9%;
+}
+
+#players-bet {
+  border: 0.3rem solid #E19D29;
+  /* width: 90%; */
+  /* margin-left: 20%; */
+  height: 31vh;
+  width: 14vw;
+  margin-right: 1%;
+}
+
+#bet-name {
+  margin: 0;
+  text-align: center;
+  color: #F5DA81;
+  font-size: 1.5vw;
+/*  -webkit-text-stroke: 0.03em black;*/
+  background-color: #1A3C48;
+  padding-bottom: 2%;
+}
+
+#bet-image {
+  margin-top: 2%;
+  width: 100%;
+}
+
+img#bet-rating-img.img-responsive {
+  width: 72%;
+  margin-left: 46%;
+  margin-top: 4%;
+  margin-bottom: 3%;
+}
+
+p#bet-review-count {
+  margin-top: 12%;
+  color: #1A3C48;
+}
+
+#pick-container {
+  background-color: #1A3C48;
+  border: 0.3rem solid #E19D29;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 12%; 
+}
+
+#pick-img {
+  border: 0.3em solid white;
+  border-radius: 9%;
+}
+p#players-name {
+  margin-left: 8%;
+  color: #F5DA81;
+  font-size: 1.2em;
+/*  -webkit-text-stroke: 0.03em black;*/
+}
+
+p#bet {
+  margin-top: -3%;
+  margin-left: 10%;
+  color: #F5DA81;
+  font-size: 1em;
+/*  -webkit-text-stroke: 0.03em black;*/
+}
+
+p#bet-number {
+  margin-top: -1%;
+  margin-left: 9%;
+  color: #F5DA81;
+  font-size: 1em;
+/*  -webkit-text-stroke: 0.03em black;*/
+}
+

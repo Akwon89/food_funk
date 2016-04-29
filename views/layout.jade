@@ -1,0 +1,74 @@
+doctype html
+html
+  head
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    title Food Fünk
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN", crossorigin="anonymous")   
+    link(rel='stylesheet', href='/stylesheets/user-form.css')
+    link(rel='stylesheet', href='/stylesheets/video.css')
+    link(rel='stylesheet', href='/stylesheets/chat.css')
+    link(rel='stylesheet', href='/stylesheets/dice.css')
+    link(rel='stylesheet', href='/stylesheets/board.css')
+    link(rel='stylesheet', href='/stylesheets/buttons.css')
+    link(rel='stylesheet', href='/stylesheets/layout.css')
+    link(rel='stylesheet', href='/stylesheets/owner-form.css')
+    link(rel='stylesheet', href='/stylesheets/yelp-form.css')
+    link(rel='stylesheet', href='/stylesheets/rollbutton.css')
+    link(rel='stylesheet', href='/stylesheets/player-piece.css')
+    link(rel='stylesheet', href='/stylesheets/all-bets.css')
+    link(rel='stylesheet', href='/stylesheets/bet-dice.css')   
+    script(src='http://code.jquery.com/jquery-latest.min.js')
+    script(src="/socket.io/socket.io.js")
+  body
+
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          // makes menu bar a drop down when in mobile
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#example')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='') Food Fünk
+        #example.collapse.navbar-collapse.pull-right
+          ul.nav.navbar-nav
+            // class='active'
+            li#welcome-message.welcome-message
+               
+            li     
+               
+            li
+              #room-button.room-button
+               
+          
+
+  
+
+    //- .container
+    br
+    block content
+
+  
+    .footer.navbar.navbar-inverse
+      p.footer-text Putting the Fünk back in Food
+      .line-footer
+      .icon-container
+        .icon
+          i.fa.fa-facebook
+          i.fa.fa-twitter
+          i.fa.fa-pinterest-p
+          i.fa.fa-google-plus
+
+
+  script(src='http://code.jquery.com/jquery-latest.min.js')
+  script(src='https://code.jquery.com/ui/1.11.4/jquery-ui.min.js')
+  //- script(src="/socket.io/socket.io.js")
+  script(src="/javascripts/rollbutton.js")
+  script(src="/javascripts/app.js")
+  script(src="/javascripts/dice.js")
+  

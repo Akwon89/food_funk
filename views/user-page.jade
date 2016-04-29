@@ -1,0 +1,325 @@
+extends layout
+block content
+
+  //- VIDEO-----
+  video.bgvid(autoplay='', loop='')
+    source(src='/videos/food_foonk.mp4', type='video/mp4')
+  //- ------------------
+
+  //- USER-FORM-----------------------
+  .container
+    .jumbotron#username-container
+      .enter-username
+        .row
+          .col-sm-6.landing-title.pull-left
+            h1 
+              strong F
+          .col-sm-6.landing-title.pull-right
+            h1 
+              strong F
+          .line
+            p.landing-text.text-center Food Fünk
+        .row
+          form#user-info 
+            p#roomname-form.landing-text.text-center= newRoom
+            br
+            input#hidden(type="hidden" value=newRoom)
+            input.form-control#name(type="text" placeholder="Enter A Username" required)
+            .button-container
+              button.btn-8(type="submit", value="EAT") Eat
+    //--------------------------------
+
+    //-BOARD------------------------------------
+    
+  .container#board-container
+    .row#game-row
+      .col-sm-8
+        table#board
+          tr
+            td.cell.board-corner#cell5
+              .board-info-container
+                .row.board-info
+                  .col-xs-12
+                    .board-line
+                      p.rest-name#cell-name5 
+                .row.board-info
+                  .col-xs-12#cell-image-col
+                    .text-center#cell-image5 
+                .row.board-info 
+                  .col-xs-8.image-rating 
+                    #cell-image-rating5 
+                  .col-xs-4 
+                    p.rest-review#cell-number-of-ratings5
+            td.cell.board-top#cell6
+              .board-info-container
+                .row.board-info
+                  .col-xs-12
+                    .board-line
+                      p.rest-name#cell-name6 
+                .row.board-info
+                  .col-xs-12#cell-image-col
+                    .text-center#cell-image6 
+                .row.board-info 
+                  .col-xs-8.image-rating 
+                    #cell-image-rating6 
+                  .col-xs-4 
+                    p.rest-review#cell-number-of-ratings6
+            td.cell.board-top#cell7
+              .board-info-container
+                .row.board-info
+                  .col-xs-12
+                    .board-line
+                      p.rest-name#cell-name7 
+                .row.board-info
+                  .col-xs-12#cell-image-col
+                    .text-center#cell-image7 
+                .row.board-info 
+                  .col-xs-8.image-rating 
+                    #cell-image-rating7 
+                  .col-xs-4 
+                    p.rest-review#cell-number-of-ratings7
+            td.cell.board-corner#cell8
+              .board-info-container
+                .row.board-info
+                  .col-xs-12
+                    .board-line
+                      p.rest-name#cell-name8 
+                .row.board-info
+                  .col-xs-12#cell-image-col
+                    .text-center#cell-image8 
+                .row.board-info 
+                  .col-xs-8.image-rating 
+                    #cell-image-rating8 
+                  .col-xs-4 
+                    p.rest-review#cell-number-of-ratings8
+          tr
+            td.cell.board-left#cell4
+              .board-info-container
+                .row.board-info
+                  .col-xs-12
+                    .board-line
+                      p.rest-name#cell-name4 
+                .row.board-info
+                  .col-xs-12#cell-image-col
+                    .text-center#cell-image4 
+                .row.board-info 
+                  .col-xs-8.image-rating 
+                    #cell-image-rating4 
+                  .col-xs-4 
+                    p.rest-review#cell-number-of-ratings4
+            td.board-center(colspan='2', rowspan='2')
+              .row#button-row
+                .col-sm-6.col-sm-offset-3
+                  .cube.flip-to-top.hovering
+                    .default-state#button-append
+                      span#roll-dice Roll
+                    .active-state
+                      #roll.btn.btn-lg 
+                        strong GO
+                        //- span.glyphicon.glyphicon-play
+              br
+              #dice1.dice
+                #side1.side
+                  .dot.c
+              #dice2.dice
+                #side2.side
+                  .dot.c
+            td.cell.board-right#cell9
+              .board-info-container
+                .row.board-info
+                  .col-xs-12
+                    .board-line
+                      p.rest-name#cell-name9 
+                .row.board-info
+                  .col-xs-12#cell-image-col
+                    .text-center#cell-image9 
+                .row.board-info 
+                  .col-xs-8.image-rating 
+                    #cell-image-rating9 
+                  .col-xs-4 
+                    p.rest-review#cell-number-of-ratings9
+          tr
+            td.cell.board-left#cell3
+              .board-info-container
+                .row.board-info
+                  .col-xs-12
+                    .board-line
+                      p.rest-name#cell-name3 
+                .row.board-info
+                  .col-xs-12#cell-image-col
+                    .text-center#cell-image3 
+                .row.board-info 
+                  .col-xs-8.image-rating 
+                    #cell-image-rating3 
+                  .col-xs-4 
+                    p.rest-review#cell-number-of-ratings3
+            td.cell.board-right#cell10
+              .board-info-container
+                .row.board-info
+                  .col-xs-12
+                    .board-line
+                      p.rest-name#cell-name10 
+                .row.board-info
+                  .col-xs-12#cell-image-col
+                    .text-center#cell-image10 
+                .row.board-info 
+                  .col-xs-8.image-rating 
+                    #cell-image-rating10 
+                  .col-xs-4 
+                    p.rest-review#cell-number-of-ratings10
+          tr
+            td.cell.board-corner#cell2
+              .board-info-container
+                .row.board-info
+                  .col-xs-12
+                    .board-line
+                      p.rest-name#cell-name2 
+                .row.board-info
+                  .col-xs-12#cell-image-col
+                    .text-center#cell-image2 
+                .row.board-info 
+                  .col-xs-8.image-rating 
+                    #cell-image-rating2 
+                  .col-xs-4 
+                    p.rest-review#cell-numb
+            td.cell.board-top#cell1
+              .board-info-container
+                .row.board-info
+                  .col-xs-12
+                    .board-line
+                      p.rest-name#cell-name1 
+                .row.board-info
+                  .col-xs-12#cell-image-col
+                    .text-center#cell-image1 
+                .row.board-info 
+                  .col-xs-8.image-rating 
+                    #cell-image-rating1 
+                  .col-xs-4 
+                    p.rest-review#cell-number-of-ratings1
+            td.cell.board-top#cell0
+              .board-info-container
+                .row.board-info
+                  .col-xs-12
+                    .board-line
+                      p.rest-name#cell-name0 
+                .row.board-info
+                  .col-xs-12#cell-image-col
+                    .text-center#cell-image0 
+                .row.board-info 
+                  .col-xs-8.image-rating 
+                    #cell-image-rating0 
+                  .col-xs-4 
+                    p.rest-review#cell-number-of-ratings0
+
+
+            td.cell.board-corner
+              #start
+                span#start-icon.glyphicon.glyphicon-triangle-left
+
+
+        //---------------------------------------------------
+        #player-piece-row
+          .row
+            //- .piece-line
+            .col-sm-8#card-position
+              #player-piece
+                .row#title-row
+                  p#piece-name
+                .row#piece-picture
+                .row
+                  .col-sm-9
+                    #piece-rating
+                  .col-sm-3
+                    p#piece-review-count 
+                .row#selection-row
+                  #player-bet
+                    form#bet-form
+                      select.bet-form.form-control#bet(required)
+                        option(value="" disabled="disabled" selected) Choose Your Bet
+                        option(value="Buy Me A Drink") Buy Me A Drink
+                        option(value="Pay My Tips") Pay My Tips
+                        option(value="Not the Designated Driver") Not the Designated Driver
+                        option(value="Buy My Appeitizer") Buy My Appeitizer
+                      br
+                      select.bet-form.form-control#number(required)
+                        option(value="" disabled="disabled" selected) Pick A Number
+                        option(value="2") 2
+                        option(value="3") 3
+                        option(value="4") 4
+                        option(value="5") 5
+                        option(value="6") 6
+                        option(value="7") 7
+                        option(value="8") 8
+                        option(value="9") 9
+                        option(value="10") 10
+                        option(value="11") 11
+                        option(value="12") 12
+                      .button-container
+                        button.btn-bet#confirm-bet(type="submit", value="BET") Bet
+                        
+        #display-bar-container
+          #display-bar
+            p#display-text Winnning Number is...
+
+        #hide-all-bets
+          #all-bets
+
+          //- #players-bet
+          //-   p.bet-name#bet-name EXAMPLE
+          //-   #bet-image
+          //-     img.img-responsive(src="https://s3-media2.fl.yelpcdn.com/bphoto/Lste7-KnUUxlqhvIFsoOzA/ms.jpg")
+          //-   .row
+          //-     .col-xs-8
+          //-       #bet-rating
+          //-         img.img-responsive#bet-rating-image(src="https://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png")
+          //-     .col-xs-4
+          //-       p#bet-review-count 300
+          //-   p#players-name Andrew
+          //-   p#bet Pay My tips
+          //-   p#bet-number 7
+
+
+          
+
+        //- #bet-dice
+        //-   .row
+        //-     #bet-button-container
+        //-     .col-sm-6.text-center
+        //-       .cube.flip-to-top.hovering
+        //-         .default-state
+        //-           span#bet-dice Roll
+        //-         .active-state
+        //-           #bet-roll.btn.btn-lg 
+        //-             strong GO
+        //-   br
+        //-   #dices
+        //-     #dice3.dice
+        //-       #side3.side
+        //-         .dot.c
+        //-     #dice4.dice
+        //-       #side4.side
+        //-         .dot.c
+                  
+
+      
+        //----CHAT------------------------ part of board due to row + col
+      .col-sm-4#chat-container
+        .row
+          #users
+            .users
+        .row 
+          #the_container
+            #chat-box
+            form#send-message
+              .row
+                .col-sm-10
+                  textarea#message
+                .col-sm-2
+                  button#submit-message(type="submit")
+                    span.glyphicon.glyphicon-send(style="font-size: 2em")
+                  
+            //-----------------------------------
+
+      
+          
+    

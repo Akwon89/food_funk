@@ -1,0 +1,74 @@
+.navbar.navbar-inverse.navbar-fixed-top {
+  background-color: #1A3C48;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #E19D29 ;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  
+  /*margin-top: %;*/
+  /* Margin bottom by footer height */
+  margin-bottom: 12%;
+}
+
+#welcome-message {
+  color: #E19D29;
+  margin-top: 4%;
+  padding-right: 1em;
+}
+
+#room-button {
+  margin-top: 8%
+}
+
+.footer.navbar.navbar-inverse {
+  background-color: #1A3C48;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 12%;
+  position: fixed;
+}
+
+.footer-text {
+ /* position: fixed;*/
+  font-size: 1.4em;
+  margin-top: 0.4em;
+  text-align: center;
+  color: #E19D29;
+}
+
+.icon-container {
+  display: flex;
+}
+
+i {
+  margin-top: 0.5em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.line-footer {
+  margin: auto;
+  border: 0.1rem solid #F5DA81;
+  width: 100%;
+}
+
+.icon {
+  text-align: center;
+  font-size: 1.8em;
+  color: #E19D29;
+  flex: 1;
+}

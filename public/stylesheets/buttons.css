@@ -1,0 +1,13 @@
+
+.size{
+  width: 25%;
+  padding-bottom: 25%;
+  height: 0;
+  border-radius: 50%;
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
